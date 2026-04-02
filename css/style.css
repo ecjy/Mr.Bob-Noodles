@@ -396,10 +396,17 @@ h1, h2, h3, h4 {
 }
 
 .hero-logo {
-  height: 180px;
+  height: 400px;
+  max-width: 90vw;
   width: auto;
-  margin: 0 auto 1.5rem;
+  margin: 0 auto 2rem;
   display: block;
+  object-fit: contain;
+  border: 1px solid var(--gold-border);
+  border-radius: 12px;
+  padding: 12px 24px;
+  background: rgba(200, 148, 10, 0.04);
+  box-shadow: 0 0 0 1px rgba(200, 148, 10, 0.08), 0 8px 32px rgba(0, 0, 0, 0.4);
 }
 
 .hero-eyebrow {
@@ -1037,10 +1044,22 @@ body.lang-zh .hero-heading {
   .menu-toggle { display: flex; }
 
   /* Hero */
+  #hero {
+    padding-top: calc(var(--nav-h) + 3rem);
+    padding-bottom: 5rem;
+  }
+
+  .hero-logo {
+    height: 220px;
+    padding: 10px 18px;
+  }
+
   .hero-heading {
     font-size: clamp(2.75rem, 11vw, 4.5rem);
     line-height: 1;
   }
+
+  .hero-sub { font-size: 0.95rem; }
 
   /* Products */
   .products-grid {
@@ -1076,6 +1095,13 @@ body.lang-zh .hero-heading {
 @media (max-width: 480px) {
   .container { padding: 0 1.25rem; }
 
+  /* Hero logo */
+  .hero-logo {
+    height: 170px;
+    padding: 8px 14px;
+    max-width: 85vw;
+  }
+
   .hero-ctas {
     flex-direction: column;
     align-items: center;
@@ -1084,4 +1110,19 @@ body.lang-zh .hero-heading {
   .hero-ctas .btn { width: 100%; justify-content: center; }
 
   .lang-btn { padding: 3px 7px; font-size: 0.62rem; }
+
+  /* Stats wrap on very small screens */
+  .stats-row { flex-wrap: wrap; gap: 1.5rem; }
+
+  /* Innovation */
+  .innovation-text h2 { font-size: 1.5rem; }
+
+  /* Why cards */
+  .why-card { padding: 1.75rem 1.25rem; }
+
+  /* Products max-width */
+  .products-grid { max-width: 100%; }
+
+  /* Section headers */
+  .section-header { margin-bottom: 3rem; }
 }
