@@ -16,7 +16,12 @@
   <header id="navbar">
     <nav class="nav-container">
       <a class="logo logo-img" href="#">
-        <img src="images/logo.png" alt="Mr.Bob Noodles" class="nav-logo-img">
+        <img src="images/MrBob_Logo.png" alt="Mr.Bob Noodles" class="nav-logo-img"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="logo-fallback">
+          <span class="logo-main">MR.BOB</span>
+          <span class="logo-sub">NOODLES</span>
+        </span>
       </a>
       <ul class="nav-links" id="navLinks">
         <li><a href="#" data-i18n="nav_home">Home</a></li>
@@ -239,7 +244,7 @@
     <div class="container footer-grid">
       <div class="footer-brand">
         <a class="logo footer-logo logo-img" href="#">
-          <img src="images/logo.png" alt="Mr.Bob Noodles" class="footer-logo-img">
+          <img src="images/MrBob_Logo.png" alt="Mr.Bob Noodles" class="footer-logo-img">
         </a>
         <p class="footer-tagline" data-i18n="footer_tagline">Premium dried noodles from the heart of Kalasin, Thailand.</p>
       </div>

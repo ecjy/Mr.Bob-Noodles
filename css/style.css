@@ -247,6 +247,12 @@ h1, h2, h3, h4 {
   font-family: var(--font-body);
 }
 
+.logo-fallback {
+  display: none;
+  flex-direction: column;
+  gap: 1px;
+}
+
 /* Image logo (navbar & footer) */
 .logo-img {
   flex-direction: row;
