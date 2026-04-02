@@ -953,7 +953,7 @@ body.lang-zh .hero-heading {
   border: 1px solid var(--border);
   padding: 5px 14px;
   border-radius: var(--radius);
-  transition: border-color 0.25s ease, color 0.25s ease;
+  transition: border-color 0.25s ease, color 0.25s ease, background 0.25s ease;
   font-family: var(--font-body);
   letter-spacing: 0.05em;
 }
@@ -961,6 +961,23 @@ body.lang-zh .hero-heading {
 .social-links a:hover {
   border-color: var(--gold-border);
   color: var(--gold);
+}
+
+.social-links .btn-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #06C755;
+  color: #fff;
+  border-color: #06C755;
+  font-weight: 600;
+  padding: 7px 16px;
+}
+
+.social-links .btn-line:hover {
+  background: #05b34c;
+  border-color: #05b34c;
+  color: #fff;
 }
 
 .footer-bottom {
